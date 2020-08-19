@@ -27,10 +27,10 @@ class Series extends Component {
             onChange={this.onSeriesInputChange}
           />
         </div>
-        {series.length === 0 && seriesName.trim() === "" && (
+        {!isFetching && series.length === 0 && seriesName.trim() === "" && (
           <p>Please enter series name into the input</p>
         )}
-        {series.length === 0 && seriesName.trim() !== "" && (
+        {!isFetching && series.length === 0 && seriesName.trim() !== "" && (
           <p>No TV series have been found with this name</p>
         )}
         {isFetching && <p>Loading....</p>}
