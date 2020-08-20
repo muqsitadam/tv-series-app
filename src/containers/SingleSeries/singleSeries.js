@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Loader from "../../components/Loader";
+import Loader from "../../components/Loader/loader";
 
 class SingleSeries extends Component {
   state = {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Main from "../Main";
+import Main from "../Main/main";
 import "./App.css";
 import "whatwg-fetch";
 
