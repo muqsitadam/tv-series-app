@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Intro from "../../components/Intro";
 import SeriesList from "../../components/SeriesList";
 import Loader from "../../components/Loader";
 
@@ -20,7 +21,7 @@ class Series extends Component {
     const { series, seriesName, isFetching } = this.state;
     return (
       <div>
-        The number of series here is : {this.state.series.length}
+        <Intro message="Here you can find all of your most watched series" />
         <div>
           <input
             value={seriesName}
