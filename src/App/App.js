@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import Main from "../components/Main/main";
 import "./App.css";
-import "whatwg-fetch";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>TV Series List</p>
-        </header>
-        <Main />
+        <header className="">
+          <p>QWERTY Series</p>
+        </header> 
       </div>
     );
   }
