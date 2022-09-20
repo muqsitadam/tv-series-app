@@ -6,21 +6,32 @@ import "./App.css";
 class App extends Component {
   //Learning state all again.. lol
   constructor(){
-    super(),
+    super();
     this.state = {
       input: ''
     }
   }
 
 onInputChange = (event) => {
-  console.log
+  console.log(event.target.value)
+}
+
+
+
+onSearchButton = () => {
+  const response = fetch(
+    "https://api.themoviedb.org/3/movie/550?api_key=621749c40f5f1c244281566e99b4c55b"
+  ).then((response) => response.json());
+  console.log(response)
 }
 
   render() {
     return (
       <div className="App">
         <Navigation/>
-        <SearchInput/>
+        <SearchInput 
+        onInputChange={this.onInputChange} 
+        onSearchButton={this.onSearchButton} />
       </div>
     );
   }
