@@ -51,5 +51,4 @@ function TopRatedMovies() {
     </div>
   );
 }
-
 export default TopRatedMovies;
